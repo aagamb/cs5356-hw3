@@ -223,6 +223,13 @@ nav ul li a:hover{
     font-size: 12pt;
 }
 
+#emoji-follower {
+    position: fixed;
+    font-size: 2rem;
+    pointer-events: none;
+    transition: transform 0.05s ease-out;
+}
+
 
 @media (max-width: 768px){
     .experience-item{

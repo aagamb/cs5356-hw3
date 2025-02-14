@@ -16,3 +16,18 @@ btn.addEventListener("click", (e)=>{
             img.src = "images/placeholder.jpg"
         )
 })
+
+let followerEnabled = false; 
+
+document.addEventListener("mousemove", function(event) {
+    if (!followerEnabled) return; 
+    let emoji = document.getElementById("emoji-follower");
+    emoji.style.left = event.clientX + "px";
+    emoji.style.top = event.clientY + "px";
+});
+
+document.getElementById("toggle-follower").addEventListener("click", function() {
+    followerEnabled = !followerEnabled; 
+    this.textContent = followerEnabled ? "Disable Follower" : "Enable Follower"; 
+    document.getElementById("emoji-follower").style.display = followerEnabled ? "block" : "none"; 
+});
