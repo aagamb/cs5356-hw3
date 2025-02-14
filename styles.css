@@ -9,6 +9,8 @@ body {
 section{
     padding: 50px 20px;
     text-align: center;
+    border-bottom: 2px solid gray;
+    text-align: center;
 }
 
 nav {
@@ -188,8 +190,38 @@ nav ul li a:hover{
     transform: rotate3d(1,5,0,180deg);
   }
 
-  
+.api-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 
+.api-box{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #a2a2a2;
+    text-align: center;
+}
+  
+#img-gen{
+    height: 350px;
+    width: auto;
+    max-width: 500px;
+    border-radius: 30px;
+}
+
+#doggy{
+    width: 200px;
+    height: 40px;
+    border-radius: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+}
 
 
 @media (max-width: 768px){
@@ -213,6 +245,10 @@ nav ul li a:hover{
     .rickroll-table {
         width: 100%;
         font-size: 0.9rem;
+    }
+
+    .api-content{
+        flex-direction: column;
     }
 }
 
