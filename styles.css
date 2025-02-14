@@ -7,7 +7,7 @@ body {
 }
 
 section{
-    padding: 100px 20px;
+    padding: 50px 20px;
     text-align: center;
 }
 
@@ -131,6 +131,64 @@ nav ul li a:hover{
     transition: 0.3s;
 }
 
+.table span{
+    font-family: monospace;
+}
+
+.learnings{
+    border: 2px solid green;
+    padding: 10px;
+    margin: 100px auto 20px auto;
+    text-align: center;
+    border-radius: 3px;
+    background-color: aquamarine;
+}
+
+.cube-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cube{
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    justify-content: center;
+}
+
+.face{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: cyan;
+    border: 2px #333 solid;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.cube-container img{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.front  { transform: rotateY(  0deg) translateZ(100px); }
+.back   { transform: rotateY(180deg) translateZ(100px); }
+.left   { transform: rotateY(-90deg) translateZ(100px); }
+.right  { transform: rotateY( 90deg) translateZ(100px); }
+.top    { transform: rotateX( 90deg) translateZ(100px); }
+.bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+.cube-container:hover .cube {
+    transform: rotate3d(1,5,0,180deg);
+  }
+
+  
 
 
 
@@ -212,3 +270,4 @@ nav ul li a:hover{
         color: #ff4136;
     }
 }
+
